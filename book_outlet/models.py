@@ -4,5 +4,5 @@ from django.db import models
 
 class Book(models.Model):
     title = models.CharField(max_length = 50)
-    rating = models.IntField()
+    rating = models.IntegerField()
     #the id field is created automatically
