@@ -13,6 +13,8 @@ class Book(models.Model):
     slug = models.SlugField(default = "", null = False, db_index = True)
     #the id field is created automatically
 
+    
+
     def get_absolute_url(self):
         return reverse("book-detail", args = [self.slug])
 
